@@ -2,21 +2,21 @@
 x64\
 Build\
 
-GameEngineBase\Build
-GameEngineBase\x64
+GameEngineBase\Build\
+GameEngineBase\x64\
 
 
-GameEngineClient\Build
-GameEngineClient\x64
+GameEngineClient\Build\
+GameEngineClient\x64\
 
-GameEngineNet\Build
-GameEngineNet\x64
+GameEngineNet\Build\
+GameEngineNet\x64\
 
-GameEngineServer\Build
-GameEngineServer\x64
+GameEngineServer\Build\
+GameEngineServer\x64\
 
-ServerApp\Build
-ServerApp\x64
+ServerApp\Build\
+ServerApp\x64\
 
-ServerTest\Build
-ServerTest\x64
+ServerTest\Build\
+ServerTest\x64\
