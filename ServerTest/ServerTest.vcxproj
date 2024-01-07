@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f3c2ea18-9be6-452c-a369-f24440cbcc9b}</ProjectGuid>
+    <ProjectGuid>{05F2BBCF-A2E8-459B-B586-5FF0CF90D156}</ProjectGuid>
     <RootNamespace>ServerTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>03_ServerTest</ProjectName>
@@ -71,6 +71,26 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(SolutionDir)Build\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\Build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(SolutionDir)Build\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\Build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(SolutionDir)Build\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\Build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(SolutionDir)Build\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\Build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

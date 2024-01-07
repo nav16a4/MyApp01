@@ -7,7 +7,7 @@ int main()
 {
     std::cout << "Hello World!\n";
     std::cout << "ServerApp.cpp 9line";
-    My::MyEngineServerStarter::GameEngineServerStarter::Test();
+    std::cout << "hell";
     std::cout;
 }
 
