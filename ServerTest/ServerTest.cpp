@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include "../GameEngineServer/ServerHeader.h"
-
-
+#include <boost/locale.hpp>
+#include <Windows.h>
 /**
 *  @brief 테스트
 *  @detail 디테일 테스트
@@ -18,10 +18,16 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "ServerApp.cpp 9line";
-    std::cout << "hell";
-    std::cout;
+    SetConsoleOutputCP(CP_UTF8);
+
+    std::string str = "간장공장공장장은 장 공장장";
+    std::string str02 = boost::locale::conv::to_utf<char>(str, "EUC-KR");
+  
+    std::cout << str << std::endl;
+    std::cout << str02 << std::endl;
+
+
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
