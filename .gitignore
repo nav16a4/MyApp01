@@ -20,3 +20,7 @@ ServerApp/x64/
 
 ServerTest/Build/
 ServerTest/x64/
+
+*.tlog
+*.log
+*.obj
