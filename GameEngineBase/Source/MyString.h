@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <string>
 
 namespace My
@@ -9,9 +10,10 @@ namespace My
 	}
 }
 
-
 class My::String::MyString
 {
+private:
+	std::string m_String;
 public:
 	MyString();
 	MyString(const std::string& cp949);
@@ -25,9 +27,12 @@ public:
 	MyString& operator=(MyString&& str);
 
 	~MyString() = default;
-
+public:
+	friend std::ostream& operator<<(std::ostream& os, const MyString& str);
+	
 public:
 	static void ConvertEncoding(std::string& utf8, const std::string& cp949);
 
+	static void Test(void);
 };
 

@@ -13,21 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\String">
+      <UniqueIdentifier>{ccfa74e5-5117-4fa5-8524-621c756da3f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngineBase.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="MyString.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Source\MyEncoding.cpp">
+      <Filter>소스 파일\String</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MyString.cpp">
+      <Filter>소스 파일\String</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseHeader.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MyString.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Source\MyEncoding.h">
+      <Filter>소스 파일\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MyString.h">
+      <Filter>소스 파일\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Singleton.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

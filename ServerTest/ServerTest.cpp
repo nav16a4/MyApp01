@@ -1,10 +1,9 @@
 ﻿// ServerApp.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <iostream>
+#include "../GameEngineBase/BaseHeader.h"
 #include "../GameEngineServer/ServerHeader.h"
-#include <boost/locale.hpp>
-#include <Windows.h>
+#include <iostream>
 /**
 *  @brief 테스트
 *  @detail 디테일 테스트
@@ -14,18 +13,22 @@
 * 
 */
 
+/*
+scv읽기 리팩터링
+로그 출력
+마리아디비
+링버퍼 리팩터링
 
+*/
 
 int main()
 {
-    SetConsoleOutputCP(CP_UTF8);
+    My::String::MyEncoding::GetInstancePtr();
+    
 
-    std::string str = "간장공장공장장은 장 공장장";
-    std::string str02 = boost::locale::conv::to_utf<char>(str, "EUC-KR");
-  
-    std::cout << str << std::endl;
-    std::cout << str02 << std::endl;
-
+    My::String::MyString::Test();
+    My::String::MyString str("안녕하세요오오오오\n");
+    std::cout << str;
 
 
 }
